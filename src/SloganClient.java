@@ -1,14 +1,9 @@
-public class SloganClient{
-    public static void main(String []args){
+public class SloganClient {
 
-        if(locked = true) {
-            Slogan test = new Slogan("Just Do It");
-            System.out.println(test);
-        }
+    public static void main(String[] args) {
 
-        if(locked = false){
-            System.out.println("Slogan is locked.  Please enter the correct key to continue");
-        }
+        Slogan test = new Slogan("Just Do It", 123);
+        return test;
 
     }
 }

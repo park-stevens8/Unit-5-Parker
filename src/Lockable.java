@@ -1,29 +1,11 @@
 public interface Lockable{
 
-    public void setKey(int key);
+        void setKey(int key, int newKey);
 
-    public boolean locked(boolean lock){
-        if(lock = true){
-            return true;
-        }
+        boolean locked();
 
-        if(lock = false){
-            return false;
-        }
-    }
+        void lock(int key);
 
-    public boolean lock(int key){
-        if(this.key == key){
-            lock = true;
-        }
-    }
-
-    public boolean unlock(int key){
-        if(this.key == key){
-            lock = false;
-        }
-    }
-
-
+        void unlock(int key);
 
 }
